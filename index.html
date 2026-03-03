@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<title>My Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:linear-gradient(120deg,#0f172a,#1e293b);
+    color:white;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+/* HEADER */
+
+.header{
+    display:flex;
+    align-items:center;
+    gap:30px;
+    background:rgba(255,255,255,0.05);
+    padding:30px;
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+.header img{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #38bdf8;
+}
+
+h1{font-size:42px;margin-bottom:10px;}
+
+.header p{color:#cbd5e1; font-size:20px;line-height:1.7;}
+
+.cert-card{
+    margin-top:30px;
+    background:rgba(255,255,255,0.05);
+    padding:30px;
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+.cert-card h2{
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.cert-section{
+    margin-bottom:25px;
+}
+
+.cert-section h3{
+    font-size:20px;
+    margin-bottom:10px;
+    color:#38bdf8;
+}
+
+.cert-section ul{
+    padding-left:20px;
+    line-height:1.8;
+    font-size:18px;
+}
+
+/* PROJECTS */
+
+.projects{margin-top:70px;}
+.projects h2{font-size:34px;margin-bottom:40px;}
+
+/* PROJECT CARD */
+
+.project{
+    background:rgba(255,255,255,0.05);
+    border-radius:20px;
+    overflow:hidden;
+    margin-bottom:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+    display:flex;
+    flex-direction:column;
+    transition:0.3s;
+}
+
+.project:hover{
+    transform:translateY(-6px);
+    box-shadow:0 25px 50px rgba(0,0,0,0.6);
+}
+
+/* CONTENT */
+
+.project-content{
+    padding:35px;
+    line-height:1.8;
+    font-size: 22px;
+}
+
+.project-content h3{font-size:30px;margin-bottom:15px;}
+
+.project-content h4{
+    margin-top:30px;
+    margin-bottom:12px;
+    color:#38bdf8;
+}
+
+.project-content ul{
+    margin-left:20px;
+    margin-bottom:18px;
+}
+
+.project-content li{
+    margin-bottom:6px;
+    color:#cbd5e1;
+}
+
+.project-content p{color:#cbd5e1;}
+
+/* IMAGE — JAVÍTVA */
+
+.project img{
+    width:100%;
+    height:auto;
+    object-fit:cover;
+    display:block;
+    border-top:1px solid rgba(255,255,255,0.08);
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    margin-top:80px;
+    color:#94a3b8;
+    font-size:14px;
+}
+
+.music-player-images {
+    display: flex;          
+    gap: 10px;              
+    margin-bottom: 20px;    
+}
+
+.music-player-images img {
+    width: 45%;             
+    height: auto;           
+    display: block;
+    border-radius: 5px;    
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2); 
+}
+
+.buscheck-images {
+    display: flex;          
+    gap: 10px;              
+    margin-bottom: 20px;    
+}
+
+.buscheck-images img {
+    width: 32%;             
+    height: auto;          
+    display: block;
+    border-radius: 5px;    
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2); 
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+    <img src="Kepek/image (3).png">
+    <div>
+        <h1>Árvai Dávid</h1>
+        <p>
+         I am currently working as a Sales Engineer, but my true passion lies in software development. 
+        I am looking to transition into IT, with a focus on front-end development, where I can combine my analytical skills with my love for programming to build engaging and user-friendly applications.
+        </p>
+    </div>
+</div>
+
+<div class="cert-card">
+
+    <h2>Certificates & Diplomas</h2>
+
+    <div class="cert-section">
+        <h3>🎓 Diploma</h3>
+        <ul>
+            <li>Computer Science — Sapientia University</li>
+        </ul>
+    </div>
+
+    <div class="cert-section">
+        <h3>📜 Certificates</h3>
+        <ul>  
+            <li>IBM — Web Development Fundamentals</li>
+            <li>IBM — Cybersecurity Fundamentals</li>
+            <li>DataCamp — Introduction to Data Ethics</li>
+            <li>DataCamp — Anomaly Detection in Python</li>
+            <li>DataCamp — Cleaning Data in Python</li>
+            <li>DataCamp — Introduction to Data Security</li>
+            <li>DataCamp — Supervised Learning with scikit-learn</li>
+            <li>DataCamp — Unsupervised Learning in Python</li>
+            <li>Alison — Scrum Development</li>
+            <li>Alison — Frontend Development</li>
+        </ul>
+    </div>
+
+</div>
+
+<div class="projects">
+<h2>🚀 My Projects</h2>
+
+<div class="project">
+    <div class="project-content">
+
+        <h3>🎧 Radio Player App</h3>
+
+        <p>
+        A modern web-based radio player built with React, featuring a clean UI layout,
+        animated center visualizer, and radio stream playback.
+        </p>
+
+        <h4>✨ Features</h4>
+
+        <h4>🧭 Layout</h4>
+        <ul>
+            <li><b>Left Sidebar</b> — Displays available radio stations, click to switch between stations</li>
+            <li><b>Center Player</b> — Circular visualizer with glow, waveform animation, playback controls, and station name</li>
+            <li><b>Right Sidebar</b> — Recently played songs list</li>
+        </ul>
+
+        <h4>🔊 Audio Playback</h4>
+        <ul>
+            <li>Streams live internet radio stations</li>
+            <li>Automatically loads selected station</li>
+            <li>Starts paused by default</li>
+            <li>Play / Pause toggle</li>
+            <li>Station switching</li>
+            <li>Auto-reload stream</li>
+        </ul>
+
+        <h4>🎨 Design</h4>
+        <ul>
+            <li>Dark modern theme</li>
+            <li>Neon green accents</li>
+            <li>Glow effects</li>
+            <li>Smooth hover animations</li>
+            <li>Responsive layout</li>
+        </ul>
+
+         <img src="Kepek/550140615-105f1191-e8ef-4074-8fe5-3a0da5092710.png">
+
+        <h4>⚙️ Current Development Status</h4>
+
+        <p><b>✅ Completed</b></p>
+        <ul>
+            <li>Full UI layout</li>
+            <li>Radio switching logic</li>
+            <li>Audio streaming</li>
+            <li>Animated visualizer</li>
+            <li>Playback controls</li>
+        </ul>
+
+        <p><b>🚧 In Progress</b></p>
+        <ul>
+            <li>Song recognition</li>
+            <li>Metadata detection</li>
+            <li>Dynamic "Now Playing"</li>
+        </ul>
+
+    </div>
+
+   
+</div>
+
+<div class="project">
+    <div class="project-content">
+
+        <h3>EventCalendar</h3>
+
+        <p>
+        A user-friendly, Qt-based desktop calendar application with weekly and monthly views,
+        event management, and category filtering.
+        </p>
+
+        <h4>Key Features</h4>
+
+        <h4>📅 Monthly View</h4>
+        <p>
+        Easily switch months and days in the mini calendar on the left; 
+        the main view automatically updates to show the selected week.
+        </p>
+
+        <h4>🗓 Weekly View</h4>
+        <p>
+        See the days of the week laid out in hourly slots from 00:00 to 23:00,
+        making it simple to review your daily events.
+        </p>
+
+        <img src="Kepek/443686825-7a0a2346-859a-45a8-8a9c-48cdac9b6832.png">
+
+        <h4>🏷 Event Categories</h4>
+        <p>Supported categories:</p>
+        <ul>
+            <li>Meeting</li>
+            <li>Workout</li>
+            <li>Personal</li>
+        </ul>
+        <p>
+        Assign custom labels and colors to distinguish your events.
+        </p>
+
+        <h4>⚙️ Toolbar & Actions</h4>
+        <ul>
+            <li>Select time intervals to quickly create events</li>
+            <li>Edit and move events via drag & drop</li>
+            <li>Add new events with the “+” button</li>
+        </ul>
+
+    </div>
+    
+</div>
+
+<div class="project">
+
+    <div class="project-content">
+
+        <h3>Employee System — Unit Tests</h3>
+
+        <p>
+        This project demonstrates a simple Employee management system written in Python
+        along with its unit tests.
+        </p>
+
+        <p>
+        The purpose of the project is to showcase employee data handling,
+        salary calculation, and team leader functionalities using unit testing.
+        </p>
+
+        <h4>✨ Features</h4>
+        <ul>
+            <li>✔ Employee data management</li>
+            <li>✔ Salary and bonus calculation based on team members</li>
+            <li>✔ Email notification validation</li>
+        </ul>
+
+        <p>
+        The tests ensure that data is processed correctly, bonuses are calculated accurately,
+        and notifications work as expected.
+        </p>
+
+        <h4>⚙️ Installation & Requirements</h4>
+        <p>To run the tests, you need:</p>
+
+        <ul>
+            <li>Python 3 installed (version 3.6 or higher recommended)</li>
+            <li>Uses Python’s built-in <strong>unittest</strong> module</li>
+            <li>No additional libraries required</li>
+        </ul>
+
+    </div>
+</div>
+
+<div class="project">
+
+    <div class="project-content">
+
+        <h3>Brain Tumor Detection and Segmentation — Deep Learning</h3>
+
+        <p>
+        This project focuses on automatic detection and segmentation of brain tumors in multispectral MRI scans using state-of-the-art Deep Learning CNNs.
+        </p>
+
+        <p>
+        It integrates medical image preprocessing, a deep learning segmentation model, and an interactive web-based diagnostic platform for visualization and analysis.
+        </p>
+
+
+        <h4>✨ Key Features</h4>
+        <ul>
+            <li>✔ MRI Data Processing: normalization, slice extraction, tumor-focused selection</li>
+            <li>✔ Deep Learning Model: modified 2D U-Net for pixel-level segmentation</li>
+            <li>✔ Automated Segmentation Workflow: end-to-end processing and mask generation</li>
+            <li>✔ Web-Based User Interface: interactive upload and analysis in browser</li>
+        </ul>
+
+        <img src="Kepek/Kep0.png" style="display:block; margin-bottom:20px;">
+
+
+        <h4>🧠 Advanced Visualization Tools</h4>
+
+        <h5>2D MRI Viewer</h5>
+        <ul>
+            <li>Slice-by-slice navigation through MRI volumes</li>
+            <li>Segmentation mask overlay on original scans</li>
+            <li>Interactive image exploration</li>
+        </ul>
+        <img src="Kepek/Kep2.png" style="display:block; margin-bottom:20px;">
+
+        <h5>3D Volume Rendering</h5>
+        <ul>
+            <li>Real-time 3D visualization of tumor regions</li>
+            <li>Interactive rotation and zoom</li>
+            <li>Improved spatial understanding of tumor structure</li>
+        </ul>
+        
+        <img src="Kepek/Kep1.png" style="display:block; margin-bottom:20px;">
+
+        <h5>Data Analytics Dashboard</h5>
+        <ul>
+            <li>Visualization of segmentation metrics</li>
+            <li>Dice score and performance indicators</li>
+            <li>Tumor size and volume statistics</li>
+            <li>Training and validation charts</li>
+        </ul>
+       
+
+        <h5>Comparative Viewer</h5>
+        <ul>
+            <li>Side-by-side comparison between original MRI scans and generated segmentation masks</li>
+        </ul>
+       
+
+        <h4>⚙️ Technical Architecture</h4>
+        <ul>
+            <li>Python backend with TensorFlow / Keras</li>
+            <li>Automated preprocessing pipeline for NIfTI MRI data</li>
+            <li>Web-based frontend for real-time segmentation display</li>
+            <li>Dynamic charts for performance monitoring</li>
+        </ul>
+
+
+        <h4>📈 System Workflow</h4>
+        <ol>
+            <li><strong>Upload:</strong> Users upload multispectral MRI files.</li>
+            <li><strong>Process:</strong> Automated preprocessing and segmentation mask generation.</li>
+            <li><strong>Analyze:</strong> Explore results via 2D/3D visualization, charts, and comparative viewer.</li>
+        </ol>
+
+        <img src="Kepek/Kep3.png" style="display:block; margin-bottom:20px;">
+           
+        <h4>📂 Dataset</h4>
+        <p>Trained on <strong>BraTS 2020 dataset</strong> with 369 MRI studies, four modalities per patient, and expert-annotated tumor masks.</p>
+
+        <h4>🚀 Applications</h4>
+        <ul>
+            <li>Medical image analysis research</li>
+            <li>AI-assisted diagnostic workflows</li>
+            <li>Clinical visualization tools</li>
+            <li>Educational demonstrations</li>
+        </ul>
+
+        <h4>🔮 Future Improvements</h4>
+        <ul>
+            <li>3D U-Net implementation</li>
+            <li>Cloud deployment</li>
+            <li>Improved segmentation accuracy</li>
+            <li>Real-time clinical integration</li>
+            <li>Automated tumor progression tracking</li>
+        </ul>
+
+    </div>
+</div>
+
+<div class="project">
+
+    <div class="project-content">
+
+        <h3>Client-Server Application — Tkinter & Socket</h3>
+
+        <p>
+        This project is a simple client-server application built using Python's <strong>Tkinter</strong> for the graphical user interface
+        and <strong>socket</strong> for network communication. The server counts the number of positive ("igen") and negative ("nem") votes received from clients.
+        </p>
+
+        <h4>✨ Features</h4>
+
+        <h5>Client</h5>
+        <ul>
+            <li>Graphical interface to send messages to the server</li>
+            <li>Displays sent messages in a text area</li>
+            <li>"Send" button to send messages</li>
+            <li>"Exit" button to disconnect from the server</li>
+        </ul>
+
+        <h5>Server</h5>
+        <ul>
+            <li>Graphical interface to manage the server</li>
+            <li>Displays received messages from clients</li>
+            <li>Displays sent responses to clients</li>
+            <li>"Start Server" button to start listening for clients</li>
+            <li>"Stop Server" button to stop the server</li>
+            <li>"Display Votes" button to show count of positive and negative votes</li>
+        </ul>
+
+
+        <h4>⚙️ Requirements</h4>
+        <ul>
+            <li>Python 3.x</li>
+            <li>Tkinter (usually included with Python)</li>
+            <li>Socket programming (standard library)</li>
+        </ul>
+
+    </div>
+</div>
+
+<div class="project">
+
+    <div class="project-content">
+
+        <h3>Website Project — Node.js & Express</h3>
+
+        <p>
+        This project is a web application built using <strong>Node.js</strong> and the <strong>Express</strong> framework. 
+        It integrates with a MySQL database to manage users, products, and services. 
+        The application supports user registration, login, and session management with JWT tokens. 
+        Additionally, it includes an admin interface for managing products and services.
+        </p>
+
+        <h4>✨ Features</h4>
+        <ul>
+            <li>User Registration and Login</li>
+            <li>JWT Authentication and Session Management</li>
+            <li>CRUD Operations for Products and Services</li>
+            <li>Admin-Only Access to Inventory Management</li>
+            <li>File Upload Functionality</li>
+            <li>Public and Admin-Specific HTML Pages</li>
+        </ul>
+
+        <h4>⚙️ Prerequisites</h4>
+        <ul>
+            <li>Node.js and npm installed</li>
+            <li>MySQL installed and running</li>
+        </ul>
+
+        <h4>🛠 Middleware</h4>
+        <ul>
+            <li><strong>authenticateJWT:</strong> Middleware for verifying JWT tokens and ensuring the user is authenticated.</li>
+            <li><strong>authorizeRole:</strong> Middleware for checking user roles to ensure only authorized users access specific routes.</li>
+        </ul>
+
+        <h4>❗ Error Handling</h4>
+        <ul>
+            <li><strong>404 Not Found:</strong> Returns a JSON error message if the requested resource is not found.</li>
+            <li><strong>500 Internal Server Error:</strong> Returns a JSON error message for any server-side errors.</li>
+        </ul>
+
+    </div>
+</div>
+
+<div class="project">
+
+    <div class="project-content">
+
+        <h3>Recipe App — Android & Kotlin</h3>
+
+        <p>
+        This project was developed as part of a university course. 
+        It implements the basic functionality of a recipe management Android application. 
+        The project started from a template that provides the necessary structure for further development.
+        </p>
+
+        <h4>📂 Project Structure</h4>
+        <ul>
+            <li><strong>kotlin-exercises:</strong> Folder containing basic Kotlin exercises</li>
+            <li><strong>android-project:</strong> The Android application project itself</li>
+        </ul>
+
+        <h4>✨ App Features</h4>
+        <ul>
+            <li>Add Recipes: Upload new recipes to the app</li>
+            <li>List Recipes: Display all uploaded recipes</li>
+            <li>View Recipe Details: Show detailed information for each recipe</li>
+        </ul>
+
+        <h4>⚙️ Technology Details</h4>
+        <ul>
+            <li>Language: Kotlin (100%)</li>
+            <li>Development Environment: Android Studio</li>
+            <li>User Interface: XML-based layouts</li>
+            <li>Version Control: Git / GitHub</li>
+        </ul>
+
+        <h4>🛠 Development Steps</h4>
+        <ul>
+            <li>Clone the template repository</li>
+            <li>Complete Kotlin exercises</li>
+            <li>Implement core functionality of the recipe app</li>
+            <li>Test the application</li>
+            <li>Add additional custom features</li>
+        </ul>
+
+    </div>
+</div>
+
+<div class="project">
+
+    <div class="project-content">
+
+        <h3>Coin-Flipping Game — Haskell</h3>
+
+        <p>
+        This is a simple Haskell program for playing a coin flipping game. 
+        The program allows you to simulate flipping a set number of coins and achieving a target configuration by flipping a subset of those coins.
+        </p>
+
+        <h4>✨ Features</h4>
+        <ul>
+            <li>Calculate the greatest common divisor (GCD) of two numbers</li>
+            <li>Check if there is a valid solution for the given number of coins and flips</li>
+            <li>Generate all possible flips for a given number of coins and flips</li>
+            <li>Simulate the coin flipping process and check if the generated flips are legal</li>
+            <li>Find the next possible states based on the current state of the game</li>
+            <li>Find the solution to the game using a depth-first search algorithm</li>
+        </ul>
+
+    </div>
+</div>
+
+<div class="project">
+
+    <div class="project-content">
+
+        <h3>Music Player App — Android</h3>
+
+        <p>
+        This is a simple music player application for the Android platform. 
+        It allows users to browse, play, and control their music easily.
+        </p>
+
+        <h4>✨ Features</h4>
+        <ul>
+            <li>Listing songs</li>
+            <li>Play, pause, skip forward and backward</li>
+            <li>Searching for songs</li>
+            <li>App settings</li>
+        </ul>
+
+        <!-- Képek csak ennél a kártyánál egymás mellett -->
+        <div class="music-player-images">
+            <img src="Kepek/7e08ca62-4b0d-41f4-8415-403b3ca2137f.jpg" alt="Music Player Screenshot 1">
+            <img src="Kepek/e9262f12-49f4-45f3-b39c-80b1b6e55af5.jpg" alt="Music Player Screenshot 2">
+        </div>
+
+        <h4>📱 Usage</h4>
+        <ol>
+            <li>Launch the application</li>
+            <li>Grant the necessary permissions (e.g., access to files)</li>
+            <li>On the main screen, you'll see a list of songs</li>
+            <li>Find the desired song and click on it to start playing</li>
+            <li>Use the play, pause, skip forward, and skip backward buttons for playback control</li>
+        </ol>
+
+    </div>
+</div>
+
+<div class="project">
+
+    <div class="project-content">
+
+        <h3>Database Project: Movie Management System</h3>
+
+        <p>
+        This project sets up a database for managing movie-related information. 
+        The database contains tables for movies, users, actors, production companies, languages, countries, directors, categories, 
+        and the relationships between them.
+        </p>
+        <p></p>
+         <img src="Kepek/Project_tabla.png" style="display:block; margin-bottom:20px;">
+
+        <h4>📂 Usage</h4>
+        <ul>
+            <li>Use the provided SQL statements to create and populate the database tables</li>
+            <li>Remove any duplicate entries using the provided deletion statements</li>
+            <li>Establish foreign key relationships to link the data across different tables</li>
+            <li>Use appropriate SQL queries to retrieve and manipulate data as needed</li>
+        </ul>
+
+    </div>
+</div>
+<div class="project">
+
+    <div class="project-content">
+
+        <h3>ESP32-WROOM Fan Controller System</h3>
+
+        <p>
+        An ESP32-based embedded system that controls a fan based on temperature and humidity readings from a DHT11 sensor, with a web interface.
+        </p>
+
+        <h4>🔧 Hardware Components</h4>
+        <ul>
+            <li>ESP32-WROOM controller</li>
+            <li>DHT11 temperature and humidity sensor</li>
+            <li>5V fan (0.19A)</li>
+            <li>IRL540N MOSFET</li>
+            <li>1N4007 protection diode</li>
+            <li>Breadboard power module</li>
+        </ul>
+
+        <h4>🔌 Wiring Diagram</h4>
+        <ul>
+            <li>DHT11 data → GPIO26</li>
+            <li>MOSFET gate (PWM) → GPIO25</li>
+            <li>Fan power → 5V</li>
+            <li>Common GND</li>
+        </ul>
+
+        <h4>🌡️ Operation</h4>
+        <ul>
+            <li>Automatic mode: fan turns on if temperature &gt; 26°C OR humidity &gt; 70%</li>
+            <li>Manual control via web interface</li>
+            <li>PWM speed control for the fan</li>
+        </ul>
+
+        <h4>📱 Web Interface Features</h4>
+        <ul>
+            <li>Real-time temperature and humidity display</li>
+            <li>Fan on/off control</li>
+            <li>Speed control slider</li>
+        </ul>
+
+         <img src="Kepek/Gemini_Generated_Image_yp81o9yp81o9yp81.png" style="display:block; margin-bottom:20px;">
+    </div>
+</div>
+
+<div class="project">
+
+    <div class="project-content">
+
+        <h3>BusCheck — Bus Tracking & Route Finder</h3>
+
+        <p>
+        A very useful application for bus tracking and route finding.
+        </p>
+
+        <h4>✨ Features</h4>
+        <ul>
+            <li>Registration and signing in ✅</li>
+            <li>Google map for orientation ✅</li>
+            <li>List of buses and stops of Marosvásárhely ✅</li>
+            <li>Bus rating ✅</li>
+            <li>Ticket collector alert ✅</li>
+            <li>Search for buses and stops ✅</li>
+            <li>Route finding - Future feature ⚠️</li>
+            <li>Bus tracking - Future feature ⚠️</li>
+        </ul>
+
+    
+        <div class="buscheck-images">
+            <img src="Kepek/a6e837a4-8797-40d2-b9b5-8d10b86b9962.jpg" alt="BusCheck Screenshot 1">
+            <img src="Kepek/c1222547-e07f-4ae9-87dc-2d0130bec81f.jpg" alt="BusCheck Screenshot 2">
+            <img src="Kepek/f91f7222-c612-4d73-849a-bc822e16cc4e.jpg" alt="BusCheck Screenshot 3">
+        </div>
+
+        <h4>⚙️ Requirements</h4>
+        <ul>
+            <li>Flutter: download and install Flutter</li>
+            <li>Virtual phone or a real one connected to your computer (for virtual phone install Android Studio)</li>
+            <li>Android version 5+</li>
+            <li>iOS version 11+</li>
+        </ul>
+
+    </div>
+</div>
+
+</div>
+
+<footer>© 2026 — Portfólió</footer>
+
+</div>
+
+</body>
+</html>
