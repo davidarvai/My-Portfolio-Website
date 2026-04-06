@@ -1499,6 +1499,165 @@ The program allows you to simulate flipping a set number of coins and achieving 
 </div>
 
 
+<div class="project security">
+  <div class="project-content">
+    <h3>PySafe Vault — Python CLI Password Manager</h3>
+
+      <a href="https://github.com/davidarvai/PySafe-Vault" target="_blank" style="display:inline-flex; align-items:center; gap:8px; margin-top:10px; margin-bottom:20px; padding:10px 20px; background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.15); border-radius:50px; color:#e2e8f0; font-size:14px; font-weight:500; text-decoration:none; transition:all 0.2s;">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+      View on GitHub
+    </a>
+
+    <p>
+      A hobby project – a secure <strong>CLI-based password manager</strong> built with <strong>Python</strong>, using <strong>AES encryption</strong> (via Fernet) to safely store credentials in a local JSON file.
+    </p>
+
+    <h4>🎯 Purpose of the Project</h4>
+    <ul>
+      <li>To understand how encryption works in practice</li>
+      <li>To implement secure password storage using Python</li>
+      <li>To learn key derivation techniques with hashing</li>
+      <li>To build a simple but practical CLI application</li>
+      <li>To explore handling sensitive data securely</li>
+    </ul>
+
+    <h4>🧱 What Was Implemented</h4>
+
+    <h5>1. Encryption System</h5>
+    <ul>
+      <li>Used <strong>cryptography.fernet</strong> for symmetric AES encryption</li>
+      <li>Ensured all stored passwords are encrypted before saving</li>
+      <li>Protected sensitive data from unauthorized access</li>
+    </ul>
+
+    <h5>2. Key Derivation</h5>
+    <ul>
+      <li>Generated encryption key from master password</li>
+      <li>Applied <strong>SHA-256 hashing</strong> for deterministic key creation</li>
+      <li>Ensured the same password always produces the same key</li>
+    </ul>
+
+    <h5>3. Local Storage</h5>
+    <ul>
+      <li>Stored encrypted data in a local <strong>JSON file</strong></li>
+      <li>Used readable, indented format for easier backups</li>
+      <li>No external database required</li>
+    </ul>
+
+    <h5>4. CLI Interface</h5>
+    <ul>
+      <li>Implemented a simple command-line menu</li>
+      <li>Options to add, view, and manage stored credentials</li>
+      <li>Focused on usability and clarity</li>
+    </ul>
+
+    <h5>5. Encryption Workflow</h5>
+    <ul>
+      <li><strong>Key Generation:</strong> Master password is hashed with SHA-256</li>
+      <li><strong>Encryption:</strong> Passwords are encrypted before saving</li>
+      <li><strong>Decryption:</strong> Stored data is decrypted on retrieval</li>
+    </ul>
+
+    <h5>6. Security Approach</h5>
+    <ul>
+      <li>Passwords are never stored in plaintext</li>
+      <li>Access requires the correct master password</li>
+      <li>Data remains secure even if the file is exposed</li>
+    </ul>
+
+    <h4>🚀 Tech Stack</h4>
+    <ul>
+      <li>Python</li>
+      <li>cryptography (Fernet)</li>
+      <li>hashlib (SHA-256)</li>
+      <li>JSON</li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="project security">
+  <div class="project-content">
+    <h3>PyNet Scanner — Python Network Reconnaissance Tool</h3>
+
+     <a href="https://github.com/davidarvai/PyNet-Scanner" target="_blank" style="display:inline-flex; align-items:center; gap:8px; margin-top:10px; margin-bottom:20px; padding:10px 20px; background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.15); border-radius:50px; color:#e2e8f0; font-size:14px; font-weight:500; text-decoration:none; transition:all 0.2s;">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+      View on GitHub
+    </a>
+
+    <p>
+      A hobby project – a lightweight <strong>multi-threaded network scanner</strong> built with <strong>Python</strong>, designed to identify active hosts and detect common open ports within a local subnet.
+    </p>
+
+    <h4>🎯 Purpose of the Project</h4>
+    <ul>
+      <li>To understand basic network reconnaissance techniques</li>
+      <li>To implement multi-threading for performance optimization</li>
+      <li>To learn how ICMP and port scanning work</li>
+      <li>To build an efficient CLI-based networking tool</li>
+      <li>To explore socket-based communication in Python</li>
+    </ul>
+
+    <h4>🧱 What Was Implemented</h4>
+
+    <h5>1. Host Discovery</h5>
+    <ul>
+      <li>Used <strong>ICMP (ping)</strong> requests to detect active hosts</li>
+      <li>Sent a single echo request per IP address</li>
+      <li>Filtered responsive devices within the subnet</li>
+    </ul>
+
+    <h5>2. Multi-threaded Scanning</h5>
+    <ul>
+      <li>Implemented <strong>ThreadPoolExecutor</strong> for concurrency</li>
+      <li>Enabled fast parallel scanning of multiple IP addresses</li>
+      <li>Improved performance compared to sequential scanning</li>
+    </ul>
+
+    <h5>3. Port Scanning</h5>
+    <ul>
+      <li>Checked common service ports (22, 80, 443)</li>
+      <li>Used socket connections to verify open ports</li>
+      <li>Identified reachable network services</li>
+    </ul>
+
+    <h5>4. Lightweight Design</h5>
+    <ul>
+      <li>No heavy external dependencies required</li>
+      <li>Relies mostly on Python standard library</li>
+      <li>Simple and efficient implementation</li>
+    </ul>
+
+    <h5>5. Scanning Workflow</h5>
+    <ul>
+      <li><strong>IP Iteration:</strong> Loops through a defined subnet range</li>
+      <li><strong>Ping Check:</strong> Verifies host availability</li>
+      <li><strong>Port Check:</strong> Tests connectivity on selected ports</li>
+    </ul>
+
+    <h5>6. Cross-Platform Consideration</h5>
+    <ul>
+      <li>Windows uses <code>-n</code> flag for ping</li>
+      <li>Linux/macOS require <code>-c</code> flag</li>
+      <li>Code can be adapted for cross-platform compatibility</li>
+    </ul>
+
+    <h4>⚠️ Prerequisites</h4>
+    <ul>
+      <li>Python 3.x</li>
+      <li>Admin/Root privileges (may be required for ICMP operations)</li>
+    </ul>
+
+    <h4>🚀 Tech Stack</h4>
+    <ul>
+      <li>Python</li>
+      <li>concurrent.futures (ThreadPoolExecutor)</li>
+      <li>socket</li>
+      <li>subprocess (ping)</li>
+    </ul>
+  </div>
+</div>
+
 </div>
 
 <footer>© 2026 — Portfolio</footer>
